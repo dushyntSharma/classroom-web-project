@@ -23,15 +23,28 @@ import model.Staff;
 import utility.DBConnection;
 
 /**
- * Servlet implementation class GetJSONStaffDetails
+ * Servlet implementation class JsonExampleData
  */
-
-public class GetJSONStaffDetails extends HttpServlet {
+public class JsonExampleData extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private static Logger logger = Logger.getLogger("controller.GetJSONStaffDetails");
+	private static Logger logger = Logger.getLogger("controller.JsonExampleData");
 
+	/**
+	 * @see HttpServlet#HttpServlet()
+	 */
+	public JsonExampleData() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		// TODO Auto-generated method stub
+
 		Connection con = DBConnection.getConnection();
 		String sql = "select * from staff";
 		List<Staff> staff = new ArrayList<Staff>();
@@ -61,30 +74,30 @@ public class GetJSONStaffDetails extends HttpServlet {
 				String password = res.getString("password");
 
 				Staff s2 = new Staff(name, age, address, city, state, country, pincode, email, username, password);
-				out1 = response.getWriter();
 				staff.add(s2);
-				Gson gson = new Gson();
-				String staffJSON = gson.toJson(staff);
-				response.setStatus(200);
-				out1.println(staffJSON);
-				out1.flush();
-				try {
-					writer = new FileWriter("D:\\Script Workspace\\ClassRoomWeb\\staffdetails.json");
 
-					writer.write(staffJSON + System.lineSeparator());
+			}
+			out1 = response.getWriter();
+			Gson gson = new Gson();
+			String staffJSON = gson.toJson(staff);
+			response.setStatus(200);
+			out1.println(staffJSON);
+			out1.flush();
+			try {
+				writer = new FileWriter("D:\\Script Workspace\\ClassRoomWeb\\staffdetails.json");
+
+				writer.write(staffJSON + System.lineSeparator());
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				logger.log(Level.WARNING, "Exception :: ", e);
+			} finally {
+				try {
+					if (writer != null)
+						writer.close();
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					logger.log(Level.WARNING, "Exception :: ", e);
-				} finally {
-					try {
-						if (writer != null)
-							writer.close();
-					} catch (IOException e) {
-						// TODO Auto-generated catch block
-						logger.log(Level.WARNING, "Exception :: ", e);
-					}
 				}
-
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -120,9 +133,12 @@ public class GetJSONStaffDetails extends HttpServlet {
 				logger.log(Level.WARNING, "Exception :: ", e);
 			}
 		}
-
 	}
 
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
