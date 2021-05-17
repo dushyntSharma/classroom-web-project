@@ -3,10 +3,44 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>About The Virtual Class</title>
-<link rel="stylesheet" type="text/css" href="./style.css" />
+<style> 
+body {
+
+  height: 100px;
+  background-color: silver;
+  animation-name: example;
+  animation-duration: 8s;
+}
+
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+h1{
+  text-shadow: 0 0 3px #FF0000;
+}
+div {
+  
+  width: 100px;
+  height: 100px;
+   background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+  transition: width 2s, height 4s;
+}
+
+div:hover {
+  width: 800px;
+  height: 300px;
+}
+</style>
 </head>
 <body>
+<h1>About the Classroom Web Application</h1>
 	<p>This is about the virtual class</p>
+	<div>ClassRoom Project
+	This given many option for the accessing information</div>
+	<p>It is one of the Jsp based project </p>
 
 
 </body>

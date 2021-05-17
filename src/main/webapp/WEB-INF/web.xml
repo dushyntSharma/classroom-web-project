@@ -70,6 +70,24 @@
 		<description></description>
 		<servlet-class>controller.JsonExampleData</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>HomeServlet</servlet-name>
+		<display-name>HomeServlet</display-name>
+		<description></description>
+		<servlet-class>controller.HomeServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>HomeServlet2</servlet-name>
+		<display-name>HomeServlet2</display-name>
+		<description></description>
+		<servlet-class>controller.HomeServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>JSTLServlet</servlet-name>
+		<display-name>JSTLServlet</display-name>
+		<description></description>
+		<servlet-class>controller.JSTLServlet</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>RegisterStudent</servlet-name>
 		<url-pattern>/RegisterStudent</url-pattern>
@@ -113,5 +131,17 @@
 	<servlet-mapping>
 		<servlet-name>JsonExampleData</servlet-name>
 		<url-pattern>/JsonExampleData</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>HomeServlet</servlet-name>
+		<url-pattern>/HomeServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>HomeServlet2</servlet-name>
+		<url-pattern>/HomeServlet2</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>JSTLServlet</servlet-name>
+		<url-pattern>/JSTLServlet</url-pattern>
 	</servlet-mapping>
 </web-app>
