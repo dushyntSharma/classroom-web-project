@@ -88,6 +88,12 @@
 		<description></description>
 		<servlet-class>controller.JSTLServlet</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>SignOut</servlet-name>
+		<display-name>SignOut</display-name>
+		<description></description>
+		<servlet-class>controller.SignOut</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>RegisterStudent</servlet-name>
 		<url-pattern>/RegisterStudent</url-pattern>
@@ -143,5 +149,9 @@
 	<servlet-mapping>
 		<servlet-name>JSTLServlet</servlet-name>
 		<url-pattern>/JSTLServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SignOut</servlet-name>
+		<url-pattern>/SignOut</url-pattern>
 	</servlet-mapping>
 </web-app>
