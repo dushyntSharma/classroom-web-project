@@ -1,1 +1,62 @@
-[{"name":"Shreevatsa","age":22,"address":"Bangalore","city":"Bnaglore","state":"karnataka","country":"india","pincode":577417,"email":"dush@gmail.com","username":"shree","password":"123"},{"name":"Manoj","age":56,"address":"Hyderbad","city":"Hyderbad","state":"Maharastra","country":"Insia","pincode":4545465,"email":"Manoj@gmail.com","username":"Manoj","password":"charger"},{"name":"Navin","age":56,"address":"Bangalore","city":"Bangalore","state":"Karnataka","country":"India","pincode":566565,"email":"navin@gmail.com","username":"navin","password":"123"},{"name":"Sharath","age":56,"address":"Pune","city":"Pune","state":"Maharastra","country":"India","pincode":455455,"email":"Sharath@gmail.com","username":"Sharath","password":"oneplus"},{"name":"Vignesha","age":32,"address":"Mangalore","city":"Mangalore","state":"Karnataka","country":"India","pincode":568956,"email":"vignesh@gmail.com","username":"vignesha","password":"123"}]
+[
+	{
+		"name": "Shreevatsa",
+		"age": 22,
+		"address": "Bangalore",
+		"city": "Bnaglore",
+		"state": "karnataka",
+		"country": "india",
+		"pincode": 577417,
+		"email": "dush@gmail.com",
+		"username": "shree",
+		"password": "123"
+	},
+	{
+		"name": "Manoj",
+		"age": 56,
+		"address": "Hyderbad",
+		"city": "Hyderbad",
+		"state": "Maharastra",
+		"country": "Insia",
+		"pincode": 4545465,
+		"email": "Manoj@gmail.com",
+		"username": "Manoj",
+		"password": "charger"
+	},
+	{
+		"name": "Navin",
+		"age": 56,
+		"address": "Bangalore",
+		"city": "Bangalore",
+		"state": "Karnataka",
+		"country": "India",
+		"pincode": 566565,
+		"email": "navin@gmail.com",
+		"username": "navin",
+		"password": "123"
+	},
+	{
+		"name": "Sharath",
+		"age": 56,
+		"address": "Pune",
+		"city": "Pune",
+		"state": "Maharastra",
+		"country": "India",
+		"pincode": 455455,
+		"email": "Sharath@gmail.com",
+		"username": "Sharath",
+		"password": "oneplus"
+	},
+	{
+		"name": "Vignesha",
+		"age": 32,
+		"address": "Mangalore",
+		"city": "Mangalore",
+		"state": "Karnataka",
+		"country": "India",
+		"pincode": 568956,
+		"email": "vignesh@gmail.com",
+		"username": "vignesha",
+		"password": "123"
+	}
+]

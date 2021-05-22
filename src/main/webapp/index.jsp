@@ -4,7 +4,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Virtual Class</title>
-<link rel="stylesheet" type="text/css" href="./style.css" />
+<link rel="stylesheet" type="text/css" href="style.css" />
 <style type="text/css">
 form {
 	display: inline-block;

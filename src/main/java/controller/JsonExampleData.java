@@ -29,18 +29,6 @@ public class JsonExampleData extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private static Logger logger = Logger.getLogger("controller.JsonExampleData");
 
-	/**
-	 * @see HttpServlet#HttpServlet()
-	 */
-	public JsonExampleData() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
@@ -48,7 +36,7 @@ public class JsonExampleData extends HttpServlet {
 		Connection con = DBConnection.getConnection();
 		String sql = "select * from staff";
 		List<Staff> staff = new ArrayList<Staff>();
-		PrintWriter out = response.getWriter();
+
 		PreparedStatement st = null;
 		ResultSet res = null;
 		FileWriter writer = null;
@@ -133,16 +121,6 @@ public class JsonExampleData extends HttpServlet {
 				logger.log(Level.WARNING, "Exception :: ", e);
 			}
 		}
-	}
-
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
 	}
 
 }

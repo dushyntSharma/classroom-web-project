@@ -1,8 +1,3 @@
-/**
- * 
- */
-
-
 var button = document.getElementById("values-btn");
 button.addEventListener("click", function() {
 	var xhr = new XMLHttpRequest();
